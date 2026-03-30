@@ -1,38 +1,72 @@
-1. Backend Setup
-The backend requires environment variables to connect to the database and handle authentication.
+# 🚀 Full Stack Project Setup Guide
 
-Navigate to the backend directory.
+## 📦 1. Backend Setup (Node.js + Express)
 
-Create a file named .env in the root of the backend folder.
+### 🔧 Environment Configuration
+1. Navigate to the `backend` directory:
+   ```bash
+   cd backend
+   ```
 
-Add the following variables to the file:
+2. Create a `.env` file in the root folder and add:
+   ```env
+   PORT=5000
+   MONGO_URI=your_mongodb_uri
+   JWT_SECRET=your_jwt_secret_key
+   CLIENT_ORIGIN=http://localhost:3000
+   ```
 
-PORT=5000
-MONGO_URI=your_mongodb_uri
-JWT_SECRET=your_jwt_secret_key
-CLIENT_ORIGIN=http://localhost:3000
-Install dependencies and start the development server:
-
-Bash
+### ▶️ Run Backend
+```bash
 npm install
 npm run dev
+```
 
-2. Frontend Setup (Flutter)
-Ensure you have the Flutter SDK installed and configured on your system.
+---
 
-Navigate to the frontend directory.
+## 📱 2. Frontend Setup (Flutter)
 
-Fetch the required packages:
+### ⚙️ Requirements
+- Install and configure Flutter SDK
 
-Bash
-flutter pub get
-Launch the application:
+### ▶️ Run App
+1. Navigate to the `frontend` directory:
+   ```bash
+   cd frontend
+   ```
 
-Bash
-flutter run
+2. Install dependencies:
+   ```bash
+   flutter pub get
+   ```
 
-3. Project Architecture
-This project utilizes a decoupled architecture to separate concerns between data management and the user interface.
-Backend: Node.js & Express handling API requests and JWT authentication.
-Database: MongoDB for flexible, document-based storage.
-Frontend: Flutter for a cross-platform mobile experience.
+3. Start the app:
+   ```bash
+   flutter run
+   ```
+
+---
+
+## 🏗️ 3. Project Architecture
+
+This project follows a **decoupled architecture**, separating backend and frontend for scalability and maintainability.
+
+### 🔙 Backend
+- Built with **Node.js & Express**
+- Handles API requests
+- Uses **JWT authentication**
+
+### 🗄️ Database
+- **MongoDB**
+- Flexible, document-based storage
+
+### 📲 Frontend
+- Built with **Flutter**
+- Cross-platform mobile application
+
+---
+
+## ✅ Notes
+- Ensure MongoDB is running or use MongoDB Atlas
+- Update `.env` values before running the backend
+- Backend must be running before starting the frontend
