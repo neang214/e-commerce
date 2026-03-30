@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- Allows sharing files from the app's internal cache directory -->
+    <cache-path name="cache" path="." />
+
+    <!-- Allows sharing files from external cache (used by image_picker for camera temp files) -->
+    <external-cache-path name="external_cache" path="." />
+
+    <!-- Allows sharing files from external files directory -->
+    <external-files-path name="external_files" path="." />
+</paths>
