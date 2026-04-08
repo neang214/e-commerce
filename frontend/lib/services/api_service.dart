@@ -6,8 +6,8 @@ import '../models/models.dart';
 class ApiService {
   // ── Base URLs ──────────────────────────────────────────────────────────────
   // Change IP to your PC's local IP (ifconfig / ipconfig)
-  static const String imageBaseUrl = 'http://192.168.1.7:5000';       // for images: http://IP:5000/uploads/abc.jpg
-  static const String baseUrl      = 'http://192.168.1.7:5000/api';   // for API:    http://IP:5000/api/products
+  static const String imageBaseUrl = 'http://localhost:5000';       // for images: http://IP:5000/uploads/abc.jpg
+  static const String baseUrl      = 'http://localhost:5000/api';   // for API:    http://IP:5000/api/products
 
   // ── Token ──────────────────────────────────────────────────────────────────
   static Future<String?> getToken() async {
