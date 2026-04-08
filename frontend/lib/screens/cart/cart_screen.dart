@@ -5,6 +5,7 @@ import '../../models/models.dart';
 import '../../providers/cart_provider.dart';
 import '../../widgets/widgets.dart';
 import 'checkout_screen.dart';
+import '../../services/api_server.dart';
 
 class CartScreen extends StatefulWidget {
   const CartScreen({super.key});
@@ -106,7 +107,7 @@ class _CartItemTile extends StatelessWidget {
                 height: 70,
                 child: item.product.image != null
                     ? CachedNetworkImage(
-                        imageUrl: 'http://192.168.1.7:5000/${item.product.image}',
+                        imageUrl: '${ApiService.imageBaseUrl}/${item.product.image}',
                         fit: BoxFit.cover,
                         errorWidget: (_, __, ___) => Container(
                           color: cs.surfaceContainerHighest,
