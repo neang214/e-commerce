@@ -30,17 +30,24 @@ npm run dev
 - Install and configure Flutter SDK
 
 ### ▶️ Run App
-1. Navigate to the `frontend` directory:
+1. Navigate to the `frontend/lib/services/api_service.dart` file and find two variables name:
+   ```bash
+   static const String imageBaseUrl = 'http://localhost:5000';
+   static const String baseUrl      = 'http://localhost:5000/api';
+   ```
+   and replace localhost with your current ip address
+   
+2. Navigate to the `frontend` directory:
    ```bash
    cd frontend
    ```
 
-2. Install dependencies:
+3. Install dependencies:
    ```bash
    flutter pub get
    ```
 
-3. Start the app:
+4. Start the app:
    ```bash
    flutter run
    ```
